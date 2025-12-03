@@ -1,14 +1,3 @@
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-
 body {
   font-family: 'Roboto', 'Open Sans', sans-serif;
   margin: 0;
@@ -36,9 +25,10 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 200px 1fr 200px;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
   grid-template-areas:
     "header header header"
+    "nav nav nav"
     "aside-left main aside-right"
     "footer footer footer";
   gap: 1rem;
@@ -65,11 +55,10 @@ nav ul {
   display: flex;
   justify-content: flex-start;
   list-style: none;
-  padding: 0;
+  padding: 0.5rem;
   margin: 0;
   gap: 1rem;
   background: #cce0ff;
-  padding: 0.5rem;
   border-radius: 5px;
 }
 
@@ -163,6 +152,7 @@ button:hover, button:focus {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "header header"
+      "nav nav"
       "main aside-left"
       "main aside-right"
       "footer footer";
