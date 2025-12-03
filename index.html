@@ -3,46 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Universal Design • Why It Matters</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Graham Lyons • Class Portal</title>
+
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --fg: #1a1a1a;
+      --accent: #0055ff;
+      --accent-light: #d8e4ff;
+      --max-width: 900px;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--accent);
+      color: white;
+      padding: 1rem 0;
+    }
+
+    nav {
+      max-width: var(--max-width);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+    }
+
+    /* About Me Grid */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (min-width: 700px) {
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .avatar {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 8px;
+      display: block;
+      margin: auto;
+    }
+
+    /* Project list style */
+    .projects ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .projects li {
+      background: var(--accent-light);
+      margin: 0.5rem 0;
+      padding: 0.8rem 1rem;
+      border-radius: 6px;
+    }
+
+    .projects a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
+
 <header>
-  <nav class="top-nav">
-    <a class="logo" href="index.html">UD Web</a>
-    <button id="menu-btn" aria-label="Open Menu" aria-expanded="false">☰</button>
-    <ul id="menu" class="menu">
-      <li><a href="index.html" aria-current="page">Why</a></li>
-      <li><a href="what.html">What</a></li>
-      <li><a href="how.html">How</a></li>
-    </ul>
+  <nav aria-label="Main Navigation">
+    <h1 style="margin:0; font-size:1.4rem;">Graham Lyons • Class Portal</h1>
+    <div>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+    </div>
   </nav>
 </header>
 
-<main>
-  <section class="hero">
-    <h1>Design for Everyone.</h1>
-    <p>The next revolution of the web is inclusive. Universal design ensures ALL people can access information—no barriers, no exceptions.</p>
-    <a class="btn" href="what.html">Learn the Basics</a>
+<main class="container">
+
+  <!-- ABOUT ME SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about-grid">
+      <div>
+        <p>
+          Hello! My name is Graham Lyons. I am a student studying web development and digital accessibility.
+          Throughout the semester, I’ve learned the importance of designing experiences that work for every user,
+          regardless of ability, device, or environment. I enjoy coding, problem-solving, and creating websites
+          that are clean, modern, and meaningful.
+        </p>
+
+        <p>
+          My goal is to continue improving as a designer and developer by following accessibility standards,
+          learning new tools, and building impactful projects. This class portal showcases the work I’ve completed
+          throughout the course and reflects my commitment to universal design and professional development.
+        </p>
+      </div>
+
+     
+    </div>
   </section>
 
-  <section class="content">
-    <h2>Why Universal Design?</h2>
-    <p>
-      The web was built to connect people — not filter them out. Universal design ensures equal access for people of all abilities,
-      devices, backgrounds, and generations. It’s not just ethical — it’s future-proof.
-    </p>
-    <p>
-      Our generation has pushed aesthetics, standards, and technology forward. The next wave is accessibility. Let's lead it.
-    </p>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects" aria-labelledby="projects-title" style="margin-top:3rem;">
+    <h2 id="projects-title">Coding Projects</h2>
+    <ul>
+      <li><a href="lab2/index.html">Lab #2 – Coding & Posting a Web Page</a></li>
+      <li><a href="lab3/index.html">Lab #3 – Tables, Forms, Tabbed Browsing, and Screen Reading</a></li>
+      <li><a href="lab4/index.html">Lab #4 – Accessible CSS Layout</a></li>
+      <li><a href="project_2/index.html">Final Project – Universal Design Website</a></li>
+    </ul>
   </section>
+
 </main>
 
 <footer>
-  <p>© 2025 Universal Design Project</p>
+  <p>© 2025 Graham Lyons • CSCI 3150 Class Portal</p>
 </footer>
 
-<script src="js/menu.js"></script>
 </body>
 </html>
