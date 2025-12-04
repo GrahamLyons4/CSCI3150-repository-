@@ -60,7 +60,7 @@ nav { grid-area: nav; }
 main { grid-area: main; }
 
 .aside-left, .aside-right {
-  background: #e6f0ff;
+  background: #cce0ff;
   padding: 1rem;
 }
 .aside-left { grid-area: aside-left; }
@@ -268,7 +268,14 @@ figure figcaption {
     padding: 1rem;
   }
 }
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
 
+a:visited {
+  color: #ffffff;
+}
 h1, h2 {
   color: rgb(255, 255, 255);
 }

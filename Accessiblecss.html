@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accessible Semantic HTML5 Example</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <a href="#maincontent" class="skip-link">Skip to main content</a>
+
   <div class="grid-container">
+
     <header>
-      <h1><li><a href="https://grahamlyons4.github.io/CSCI3150-repository-/">Return to Class Portal</a></li>  </h1>
-      <h2>My Accessible Website</h2>
+      <h1>My Accessible Website</h1>
       <p>Using semantic HTML5 and accessibility best practices</p>
+      <p><a href="https://grahamlyons4.github.io/CSCI3150-repository-/">Return to Class Portal</a></p>
     </header>
 
     <nav aria-label="Main Navigation">
-      <h2 class="sr-only" >Main Menu</h2>
+      <h2 class="sr-only">Main Menu</h2>
       <ul>
         <li><a href="#home">Home</a></li>
         <li>
@@ -33,7 +36,7 @@
     </nav>
 
     <aside class="aside-left">
-      <h2>Related Links</h2>
+      <h3>Related Links</h3>
       <ul>
         <li><a href="#a1">Accessibility Tips</a></li>
         <li><a href="#a2">Design Patterns</a></li>
@@ -41,11 +44,13 @@
     </aside>
 
     <main id="maincontent">
+
       <article>
         <header>
           <h2>Accessible Data Table</h2>
         </header>
         <p>This data table uses proper semantics and headers for accessibility.</p>
+
         <table aria-describedby="table-desc">
           <caption id="table-desc">Sales data for Q1 2025</caption>
           <thead>
@@ -74,21 +79,26 @@
         <header>
           <h2>Accessible Contact Form</h2>
         </header>
+
         <form aria-labelledby="contact-heading">
           <fieldset>
             <legend id="contact-heading">Contact Us</legend>
+
             <div>
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="name" required>
             </div>
+
             <div>
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" required>
             </div>
+
             <div>
               <label for="message">Message:</label>
               <textarea id="message" name="message" rows="4" required></textarea>
             </div>
+
             <button type="submit">
               <span class="material-icons" aria-hidden="true">send</span>
               Send Message
@@ -96,16 +106,18 @@
           </fieldset>
         </form>
       </article>
+
     </main>
 
     <aside class="aside-right">
-      <h2>Latest News</h2>
+      <h3>Latest News</h3>
       <p>Check out our latest updates and articles on inclusive design and development.</p>
     </aside>
 
     <footer>
       <p>&copy; 2025 My Accessible Website</p>
     </footer>
+
   </div>
 </body>
 </html>
