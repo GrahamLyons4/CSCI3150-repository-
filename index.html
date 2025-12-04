@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Graham Lyons • Class Portal</title>
-
-  <style>
+  <link rel="stylesheet" href="style.css">
+ <style>
     :root {
       --bg: #f7f7f7;
       --fg: #1a1a1a;
@@ -16,13 +13,36 @@
       --accent-light: #d8e4ff;
       --max-width: 900px;
     }
+    .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+        }
 
+figure {
+    display: inline-block;
+    
+    margin: 20px; 
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+   
+    text-align: center;
+}
     body {
       margin: 0;
       font-family: system-ui, sans-serif;
       background: var(--bg);
       color: var(--fg);
       line-height: 1.6;
+      
     }
 
     header {
@@ -30,7 +50,7 @@
       color: white;
       padding: 1rem 0;
     }
-
+    
     nav {
       max-width: var(--max-width);
       margin: auto;
@@ -38,6 +58,8 @@
       justify-content: space-between;
       align-items: center;
       padding: 0 1rem;
+      color: white;
+      
     }
 
     nav a {
@@ -54,10 +76,10 @@
     }
 
     h1, h2 {
-      color: var(--accent);
+      color: white;
     }
 
-    /* About Me Grid */
+    
     .about-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -79,7 +101,6 @@
       margin: auto;
     }
 
-    /* Project list style */
     .projects ul {
       list-style: none;
       padding: 0;
@@ -102,7 +123,7 @@
       text-align: center;
       padding: 2rem 1rem;
       margin-top: 3rem;
-      color: #666;
+      color: #ffffff;
     }
   </style>
 </head>
@@ -110,15 +131,20 @@
 <body>
 
 <header>
-  <nav aria-label="Main Navigation">
-    <h1 style="margin:0; font-size:1.4rem;">Graham Lyons • Class Portal</h1>
-     <h2 class="sr-only" >Main Menu</h2>
-    <div>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-    </div>
+  
+  
+  <nav aria-label="main-menu-heading">
+    <h1>Graham Lyons • Class Portal</h1>
+    <h2 id="main-menu-heading">Main Menu</h2>
+    <ul>
+      
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
   </nav>
 </header>
+
+
 
 <main class="container">
 
@@ -141,8 +167,10 @@
           throughout the course and reflects my commitment to universal design and professional development.
         </p>
       </div>
+      <figure>
        <img src="avatar.jpg" alt="Graham Lyons avitar, headshot of darth vader from lego starwars" class="avatar">
-      
+      <figcaption>Graham's Avitar</figcaption>
+      </figure>
     </div>
   </section>
 
