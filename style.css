@@ -269,12 +269,12 @@ figure figcaption {
   }
 }
 a {
-  color: rgb(0, 0, 0);
+  color: rgb(183, 0, 0);
   text-decoration: none;
 }
 
 a:visited {
-  color: #ffffff;
+  color: #e6308a;
 }
 h1, h2 {
   color: rgb(255, 255, 255);
