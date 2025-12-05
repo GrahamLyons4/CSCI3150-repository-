@@ -1,8 +1,8 @@
 :root {
   --bg: #0d0d0d;
   --fg: #f1f1f1;
-  --accent: #66ffcc;
-  --accent-dark: #2fb48d;
+  --accent: #66ffcc98;
+  --accent-dark: #2fb48cb2;
   --text-muted: #c8c8c8;
   --max-width: 750px;
   font-size: 16px;
