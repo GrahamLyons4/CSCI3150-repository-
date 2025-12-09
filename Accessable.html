@@ -102,16 +102,19 @@
   </header>
 
   <nav aria-label="Main Navigation">
+      <h2 class="sr-only">Navigation</h2>
+    
     <ul>
+      
       <li><a href="#home">Home</a></li>
       <li>
-        <a href="#services">Services <span class="material-icons" aria-hidden="true">expand_more</span></a>
+        <a href="#home">Services <span class="material-icons" aria-hidden="true">expand_more</span></a>
         <ul>
-          <li><a href="#design">Design</a></li>
-          <li><a href="#development">Development</a></li>
+          <li><a href="#home">Design</a></li>
+          <li><a href="#home">Development</a></li>
         </ul>
       </li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home">Contact</a></li>
     </ul>
   </nav>
 
@@ -154,15 +157,15 @@
         <fieldset>
           <legend id="contact-heading">Contact Us</legend>
 
-          <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
+         <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" autocomplete="given-name" required>
+            </div>
 
-          <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
 
           <div>
             <label for="message">Message:</label>
@@ -177,6 +180,6 @@
       </form>
     </article>
   </main>
-
+<footer><p id="home"> All these links are intentinally dead but they have to go somewhere</p></footer>
 </body>
 </html>
