@@ -272,7 +272,9 @@ a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-
+a:active {
+  color: #ffa8d4;
+}
 a:visited {
   color: #ffa8d4;
 }
